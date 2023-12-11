@@ -1,0 +1,780 @@
+// CSS for Mobile View
+@media (max-width: 576px) {
+
+   .container {
+      width: 100%;
+   }
+
+   .navbar_section {
+      background-color: white;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+   }
+
+   .info_content {
+      top: 55%;
+      left: 55%;
+   }
+
+   .navbar__menu {
+      display: none;
+
+      & ul {
+         position: absolute;
+         right: 0;
+         z-index: 9999;
+         width: 100%;
+         top: 50px;
+         background-color: white;
+         text-align: right;
+         flex-direction: column;
+
+         & li {
+            position: relative;
+
+            & a {
+               text-align: center;
+            }
+
+            & ul {
+               text-align: center;
+               position: relative;
+               background-color: white;
+               width: 100%;
+            }
+         }
+      }
+   }
+
+
+   .secondary_menu {
+      display: none !important;
+   }
+
+   .bar_icon {
+      display: flex !important;
+      width: 60%;
+      justify-content: end;
+   }
+
+   .navbar_logo {
+      width: 30%;
+   }
+
+   .navbar {
+      flex-wrap: wrap;
+      gap: 10px;
+   }
+
+   .header {
+      background-size: cover;
+   }
+
+   .banner h1 {
+      padding-top: 40px;
+      font-size: 32px;
+   }
+
+   .wrapper {
+      top: 300px;
+      left: 0%;
+   }
+
+   .contact-form-container {
+      top: 91%;
+   }
+
+   .contact-form-wrapper {
+      bottom: 0;
+   }
+
+   .services {
+      flex-direction: column;
+      gap: 10px;
+      top: none;
+      transform: translateY(-0);
+   }
+
+   .aboutUs {
+      flex-direction: column;
+      padding: 0 76px;
+
+      &_map {
+         width: 100%;
+
+      }
+   }
+
+   .services_image {
+      & img {
+         width: 100%;
+      }
+   }
+
+   .projects_div__cards--card {
+      padding: 2% 20px;
+   }
+
+   .projects_div__cards--card__button {
+      width: max-content;
+      height: max-content;
+
+      & button {
+         margin: 0;
+      }
+   }
+
+
+
+   .loremlogo_div__logos {
+      flex-wrap: wrap;
+      padding: 0px 15px;
+      gap: 20px;
+      justify-content: space-between;
+
+      & img {
+         width: 33%;
+      }
+   }
+
+   .services_section--div {
+      flex-direction: column;
+   }
+
+   .blog_image {
+      & img {
+         width: 100%;
+      }
+   }
+
+   .blog_cards {
+      flex-direction: column;
+   }
+
+   .testimonial__content--card {
+      flex-direction: column;
+      gap: 20px;
+
+      text-align: start;
+
+      &--intro {
+         padding: 20px 0;
+         border-left: none;
+         border-top: 1px solid gray;
+      }
+   }
+
+   .cta_div {
+      background-size: cover;
+   }
+
+   .cta_div--content--buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      & button:nth-child(1) {
+
+         margin-right: 0;
+      }
+   }
+
+   .events_section__div__cards {
+      flex-wrap: wrap;
+
+      &--card {
+
+         width: 100%;
+         padding-right: 10px;
+      }
+   }
+
+   .footer_div {
+      flex-wrap: wrap;
+
+      &--logo {
+         margin-bottom: 20px;
+      }
+
+      &_menulinks {
+         width: 50%;
+      }
+
+      &_newsletter {
+         width: 100%;
+         margin-top: 20px;
+
+         &--para {
+            margin-top: 10px;
+         }
+      }
+   }
+
+   .contact-form-wrapper {
+      height: max-content;
+      width: 320px;
+   }
+
+   .banner_heading {
+      font-size: 30px !important;
+   }
+
+   .aboutUs_content h2 {
+      font-size: 30px;
+      width: 75%;
+   }
+
+   .projects_div--intropara {
+      font-size: 30px;
+      width: 60%;
+   }
+
+   .services_content {
+      padding-right: 0;
+
+      & h2 {
+         width: 100%;
+         font-size: 30px;
+      }
+   }
+
+   .testimonial__content {
+      & h2 {
+         width: 100%;
+      }
+   }
+
+   .cta_div {
+      background-size: cover;
+
+      & h2 {
+         font-size: 30px;
+      }
+   }
+
+   .cta_div--content--buttons {
+      align-items: center;
+
+      & button {
+         width: max-content;
+
+      }
+   }
+
+   .slick-prev {
+      left: 25px;
+      /* Adjust the left position according to your preference */
+   }
+
+   .slick-next {
+      right: 25px;
+      /* Adjust the left position according to your preference */
+   }
+
+
+}
+
+// CSS for Tablet view
+@media (min-width: 577px) and (max-width: 768px) {
+   .container {
+      max-width: 540px;
+   }
+
+   .header {
+      background-size: cover;
+   }
+
+   .navbar {
+      flex-wrap: wrap;
+      gap: 20px;
+      background-color: white;
+   }
+
+   .navbar_section {
+      background-color: white;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+   }
+
+   .services {
+      flex-wrap: wrap;
+
+      &_card {
+         width: 30%;
+         padding: 0;
+         justify-content: space-between !important;
+      }
+   }
+
+   .info_content {
+      top: 56%;
+      left: 56%;
+   }
+
+   .loremlogo_div__logos {
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+
+      & img {
+         width: 23%;
+      }
+   }
+
+   .testimonial__content--card {
+      flex-direction: column;
+      gap: 20px;
+
+      &--intro {
+         padding: 20px;
+         border-left: none;
+         border-top: 1px solid grey;
+
+         & p {
+            text-align: justify;
+         }
+      }
+   }
+
+   .services_section--div {
+      flex-direction: column;
+   }
+
+   .services_flexdiv {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+
+   .services_div {
+      width: 45%;
+   }
+
+   .blog_cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &__card {
+         width: 45%;
+      }
+   }
+
+   .cta_div {
+      background-size: cover;
+
+      & h2 {
+         font-size: 30px;
+      }
+   }
+
+   .blog_image {
+      width: 100%;
+
+      & img {
+         width: 100%;
+         object-fit: cover;
+      }
+   }
+
+   .aboutUs {
+      flex-direction: column;
+      position: relative;
+   }
+
+   .aboutUs_map {
+      width: 100%;
+   }
+
+   .wrapper {
+      position: absolute;
+      left: 10px;
+      top: 25%;
+   }
+
+   .events_section__div__cards {
+      flex-wrap: wrap;
+
+      &--card {
+         width: 100%;
+      }
+   }
+
+   .footer_div {
+      flex-wrap: wrap;
+
+      &--logo {
+         margin-bottom: 20px;
+      }
+
+      &_menulinks {
+         width: 50%;
+      }
+
+      &_newsletter {
+         width: 100%;
+         margin-top: 20px;
+
+         &--para {
+            margin-top: 10px;
+         }
+      }
+   }
+
+   .banner_heading {
+      font-size: 30px !important;
+   }
+
+   .aboutUs_content h2 {
+      font-size: 30px;
+      width: 75%;
+   }
+
+   .projects_div--intropara {
+      font-size: 30px;
+      width: 60%;
+   }
+
+   .projects_div__cards--card {
+      padding: 10px 15px;
+      position: relative;
+   }
+
+   .projects_div__cards--card__button {
+      width: max-content;
+      height: max-content;
+
+      & button {
+         margin: 0;
+         position: absolute;
+         bottom: 30px;
+      }
+   }
+
+   .services_content {
+      & h2 {
+         font-size: 30px;
+      }
+   }
+
+   .testimonial__content {
+      & h2 {
+         width: 100%;
+      }
+   }
+
+   .slick-prev {
+      left: 25px;
+      /* Adjust the left position according to your preference */
+   }
+
+   .slick-next {
+      right: 25px;
+      /* Adjust the left position according to your preference */
+   }
+}
+
+// CSS for small desktop view 
+@media (min-width: 768px) and (max-width: 992px) {
+
+   .container {
+      max-width: 720px;
+   }
+
+   .header {
+      background-size: cover;
+   }
+
+   .navbar {
+      flex-wrap: wrap;
+      gap: 20px;
+
+   }
+
+   .services {
+      flex-wrap: wrap;
+
+      &_card {
+         width: 30%;
+         padding: 0;
+         justify-content: space-between !important;
+      }
+   }
+
+   .info_content {
+      top: 46%;
+      left: 52%;
+   }
+
+   .loremlogo_div__logos {
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+
+      & img {
+         width: 23%;
+      }
+   }
+
+   .testimonial__content--card {
+      flex-direction: column;
+      gap: 20px;
+
+      &--intro {
+         padding: 20px;
+         border-left: none;
+         border-top: 1px solid grey;
+
+         & p {
+            text-align: justify;
+         }
+      }
+   }
+
+   .services_section--div {
+      flex-direction: column;
+   }
+
+   .services_flexdiv {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+
+   .services_div {
+      width: 45%;
+   }
+
+   .blog_cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &__card {
+         width: 45%;
+      }
+   }
+
+   .cta_div {
+      background-size: cover;
+
+      & h2 {
+         font-size: 30px;
+      }
+   }
+
+   .blog_image {
+      width: 100%;
+
+      & img {
+         width: 100%;
+         object-fit: cover;
+      }
+   }
+
+   .aboutUs {
+      flex-direction: column;
+      position: relative;
+   }
+
+   .aboutUs_map {
+      width: 100%;
+   }
+
+   .wrapper {
+      position: absolute;
+      left: 10px;
+      top: 25%;
+   }
+
+   .events_section__div__cards {
+      flex-wrap: wrap;
+
+      &--card {
+         width: 100%;
+      }
+   }
+
+   .footer_div {
+      flex-wrap: wrap;
+
+      &--logo {
+         margin-bottom: 20px;
+      }
+
+      &_menulinks {
+         width: 50%;
+      }
+
+      &_newsletter {
+         width: 100%;
+         margin-top: 20px;
+
+         &--para {
+            margin-top: 10px;
+         }
+      }
+   }
+
+   .banner_heading {
+      font-size: 30px !important;
+   }
+
+   .aboutUs_content h2 {
+      font-size: 30px;
+      width: 75%;
+   }
+
+   .projects_div--intropara {
+      font-size: 30px;
+      width: 60%;
+   }
+
+   .projects_div__cards--card {
+      padding: 10px 15px;
+      position: relative;
+   }
+
+   .projects_div__cards--card__button {
+      width: max-content;
+      height: max-content;
+
+      & button {
+         margin: 0;
+         position: absolute;
+         bottom: 30px;
+      }
+   }
+
+   .services_content {
+      & h2 {
+         font-size: 30px;
+      }
+   }
+
+   .testimonial__content {
+      & h2 {
+         width: 100%;
+      }
+   }
+
+   .news_event_div {
+      width: 60%;
+   }
+
+   .slick-prev {
+      left: 25px;
+      /* Adjust the left position according to your preference */
+   }
+
+   .slick-next {
+      right: 25px;
+      /* Adjust the left position according to your preference */
+   }
+}
+
+@media (min-width: 992px) and (max-width: 1280px) {
+   .container {
+      max-width: 960px;
+      margin: 0 auto;
+   }
+
+   .services {
+      gap: none;
+      justify-content: space-between;
+   }
+
+   .aboutUs {
+      gap: 120px;
+
+      &_map {
+         height: max-content;
+      }
+
+      &_content {
+         width: 60%;
+      }
+   }
+
+   .loremlogo_div__logos {
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      & img {
+         width: 20%;
+      }
+   }
+
+   .services_content {
+      width: 60%;
+      padding-right: 0;
+   }
+
+   .services_flexdiv {
+      flex-wrap: wrap;
+   }
+
+   .services_div {
+      width: 100%;
+   }
+
+   .services_image {
+      width: 40%;
+
+      & img {
+         width: 100%;
+         object-fit: contain;
+      }
+   }
+
+   .blog_cards__card {
+      width: 30%;
+   }
+
+   .blog_image {
+      width: 100%;
+
+      & img {
+         width: 100%;
+         object-fit: cover;
+      }
+   }
+
+   .testimonial__content h2 {
+      width: 100%;
+   }
+
+   .events_section__div {
+      margin-top: 60px;
+      margin-bottom: 60px;
+   }
+
+   .events_section__div__cards--card {
+      padding-right: 30px;
+   }
+
+   .projects_div__cards {
+      position: relative;
+   }
+
+   .projects_div__cards--card {
+      height: 500px;
+   }
+
+   .slick-prev {
+      left: 45px;
+      /* Adjust the left position according to your preference */
+   }
+
+   .slick-next {
+      right: 45px;
+      /* Adjust the left position according to your preference */
+   }
+
+}

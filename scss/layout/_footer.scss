@@ -1,0 +1,102 @@
+@use '../abstract/variables' as *;
+
+// CSS for Footer
+footer {
+    padding: 96px 0;
+    background-image: url('../images/footerbg.png');
+    background-color: black;
+
+    .footer_div {
+        display: flex;
+        justify-content: space-between;
+
+        &_menulinks {
+            & ul {
+                & li {
+                    margin-bottom: 24px;
+
+                    & a {
+                        color: white;
+                    }
+                }
+            }
+
+            &--share {
+                margin-top: 32px;
+
+                &--icons {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+            }
+
+            &--contact {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 15px;
+
+                & img {
+                    object-fit: contain;
+                }
+            }
+
+            & p {
+                color: white;
+            }
+
+            & h3 {
+                color: white;
+                margin-bottom: 24px;
+            }
+        }
+
+        &_newsletter {
+            &--heading {
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                color: white;
+                position: relative;
+                width: max-content;
+
+                &::before {
+                    content: "";
+                    width: 44px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: white;
+                    height: 1px;
+                    right: -75px;
+                    position: absolute;
+                }
+            }
+
+            &--para {
+                color: white;
+                font-size: $font-size-28;
+                margin-bottom: 34px;
+            }
+
+            &--subscribediv {
+                display: flex;
+
+                & input[type="text"] {
+                    border: none;
+                    background: transparent;
+                    border: 1px solid rgb(128, 128, 128, 0.3);
+                    height: 60px;
+                    width: 300px;
+
+                    &::placeholder {
+                        padding: 24px 24px;
+                    }
+                }
+
+                & button {
+                    border: none;
+                    padding: 16px 32px;
+                }
+            }
+        }
+    }
+}

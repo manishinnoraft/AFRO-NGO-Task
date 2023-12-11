@@ -1,0 +1,236 @@
+@use '../abstract/variables' as *;
+
+// CSS for the About Us Section 
+.aboutUs {
+  position: relative;
+  gap: 160px;
+  display: flex;
+
+  &_map {
+    width: 62%;
+    position: relative;
+ 
+    &--mark {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+
+      &:hover {
+        .location-name {
+          display: block;
+        }
+
+        & img {
+          scale: 1.2;
+        }
+      }
+
+      &:nth-child(1) {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+      }
+
+      &:nth-child(2) {
+        position: absolute;
+        top: 20%;
+        left: 30%;
+      }
+
+      &:nth-child(3) {
+        position: absolute;
+        top: 10%;
+        left: 40%;
+      }
+
+      &:nth-child(4) {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+
+        & img {
+          height: 25px;
+          width: 25px;
+        }
+      }
+
+      &:nth-child(5) {
+        position: absolute;
+
+        top: 30%;
+        left: 60%;
+
+        & img {
+          height: 25px;
+          width: 25px;
+        }
+      }
+
+      &:nth-child(6) {
+        position: absolute;
+
+        top: 70%;
+        left: 60%;
+
+        & img {
+          height: 25px;
+          width: 25px;
+        }
+      }
+
+      &:nth-child(7) {
+        position: absolute;
+        top: 40%;
+        left: 70%;
+      }
+
+      &:nth-child(8) {
+        position: absolute;
+        background-image: url('../images/Ellipse3.svg');
+        top: 55%;
+        left: 75%;
+      }
+    }
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  .location-name {
+    display: none;
+    position: absolute;
+    top: 20px;
+    /* Adjust the distance from the marker */
+    left: 50%;
+    /* Center it horizontally */
+    transform: translateX(-50%);
+    text-align: center;
+    font-weight: bold;
+  }
+
+  &_content {
+    & h2 {
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    &--heading {
+      position: relative;
+
+      &::before {
+        z-index: 8;
+        position: absolute;
+        content: "";
+        width: 72px;
+        top: 50%;
+        left: -96px;
+        transform: translateY(-50%);
+        height: 2px;
+        background-color: black;
+
+      }
+
+      &::after {
+        z-index: 8;
+        position: absolute;
+        content: "";
+        background-repeat: no-repeat;
+        width: 14px;
+        height: 14px;
+        background-image: url('../images/dot\ 1.png');
+        background-size: contain;
+        top: 50%;
+        left: -24px;
+        transform: translateY(-50%);
+      }
+    }
+
+    &--para {
+      margin: 32px 0;
+    }
+  }
+
+}
+
+.wrapper {
+  position: absolute;
+  bottom: 300px;
+  left: 20px;
+  width: 152px;
+  height: 152px;
+  background-image: url('../images/heartimage.webp');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 20px solid rgb(255, 106, 0);
+  border-right: 20px solid rgb(255, 106, 0);
+  border-bottom: 20px solid rgb(255, 106, 0);
+  width: 152px;
+  height: 152px;
+  animation: fill ease-in-out 3s infinite;
+  transform: rotate(30deg);
+}
+
+@keyframes fill {
+  0% {
+    transform: rotate(30deg);
+  }
+
+  25% {
+    transform: rotate(270deg);
+
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.statistics {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__card {
+    margin-bottom: 24px;
+    position: relative;
+    width: 50%;
+
+    &:nth-child(1)::before {
+      background-color: $color_cgreen;
+    }
+
+    &:nth-child(2)::before {
+      background-color: $color_cpink;
+    }
+
+    &:nth-child(3)::before {
+      background-color: $color_cyellow;
+    }
+
+    &:nth-child(4)::before {
+      background-color: $color_corange;
+    }
+
+    &::before {
+      z-index: -1;
+      content: "";
+      border-radius: 10px;
+      width: 20px;
+      top: -5px;
+      height: 20px;
+      position: absolute;
+    }
+
+    & h3 {
+      font-size: 24px;
+    }
+
+  }
+}
