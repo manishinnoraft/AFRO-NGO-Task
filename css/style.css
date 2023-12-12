@@ -883,6 +883,15 @@ footer .footer_div_newsletter--subscribediv button {
   display: block;
 }
 
+.testimonial__content--carddiv {
+  border: 1px solid var(--foundation-orange-orange-300, #F5936F);
+  max-width: 65%;
+  margin: 0 auto;
+  height: max-content;
+  border-radius: 0 25px 0 25px;
+  margin-top: 111px;
+}
+
 .testimonial_section--div {
   position: relative;
 }
@@ -933,16 +942,18 @@ footer .footer_div_newsletter--subscribediv button {
   font-size: 56px;
   width: 60%;
 }
+
 .testimonial__content--card {
   position: relative;
+  top: -39px;
+  width: 90%;
+  border-radius: 0 25px 0 25px;
+  margin: 0 auto;
   z-index: 9999;
   background-color: white;
   box-shadow: 0px 0px 3px 0px grey;
-  max-width: 65%;
-  padding: 43px;
-  margin: 0 auto;
-  margin-top: 72px;
   gap: 139px;
+  padding: 43px;
   display: flex;
   align-items: center;
 }

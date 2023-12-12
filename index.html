@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="./css/slick-theme.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/contactform.js"></script>
     <script src="./js/animation.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -113,7 +114,7 @@
     <main class="main">
         <!-- Services Section Starts -->
         <section class="services_section">
-            <div class="container services">
+            <div class="container services" data-aos="fade-up" data-aos-easing="linear">
                 <div class="services_card">
                     <img src="./images/Healthy.png" alt="Image Info" height="81" width="81">
                     <h3>Healthy Food</h3>
@@ -143,7 +144,8 @@
         <!-- About Us Section Starts -->
         <section class="aboutUs_section">
             <div class="container aboutUs">
-                <div class="aboutUs_map"><img src="./images/map.webp" alt="Image Info" width="480" height="579">
+                <div class="aboutUs_map" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+                    <img src="./images/map.webp" alt="Image Info" width="480" height="579">
                     <div class="aboutUs_map--mark">
                         <img src="./images/Ellipse1.png" alt="Image Info" height="16" width="17">
                         <div class="location-name">Place 1</div>
@@ -174,7 +176,7 @@
                         <div class="location-name">Place 7</div>
                     </div>
                 </div>
-                <div class="aboutUs_content">
+                <div class="aboutUs_content" data-aos="fade-up" data-aos-easing="linear">
                     <h3 class="aboutUs_content--heading">KNOW ABOUT US</h3>
                     <h2>We provide a place for children with special needs</h2>
                     <p class="aboutUs_content--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
@@ -245,7 +247,7 @@
         </div>
         <!-- Contact Form Ends -->
         <!-- Loremlogo Section Starts -->
-        <section class="loremlogo">
+        <section class="loremlogo " data-aos="fade-up" data-aos-easing="linear">
             <div class="container loremlogo_div">
                 <h3>OUR SUPPORTERS</h3>
                 <div class="loremlogo_div__logos">
@@ -262,8 +264,9 @@
         <!-- Projects Section Starts -->
         <section class="projects_section">
             <div class="container projects_div">
-                <h3 class="projects_div--heading">PROJECTS WE HAVE DONE</h3>
-                <p class="projects_div--intropara">Learn the stories of those we've already helped</p>
+                <h3 class="projects_div--heading" data-aos="fade-up" data-aos-easing="linear">PROJECTS WE HAVE DONE</h3>
+                <p class="projects_div--intropara" data-aos="fade-up" data-aos-easing="linear">Learn the stories of
+                    those we've already helped</p>
             </div>
             <div class="project_sliderdiv">
                 <div class="projects_div__cards responsive-1">
@@ -317,7 +320,7 @@
         <!-- Services Section starts -->
         <section class="services_section">
             <div class="container services_section--div">
-                <div class="services_content">
+                <div class="services_content" data-aos="fade-up" data-aos-easing="linear">
                     <p class="services_content--heading">WHAT WE DO</p>
                     <h2>Some services we provide for our children</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
@@ -364,9 +367,8 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="services_image">
+                <div class="services_image" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
                     <img src="./images/servicesimage.webp" alt="Image Info" height="589" width="497">
                 </div>
             </div>
@@ -375,12 +377,12 @@
         <!-- Blog Section Starts -->
         <section class="blog_section">
             <div class="container blog_section--div">
-                <div class="services_content">
+                <div class="services_content" data-aos="fade-up" data-aos-easing="linear">
                     <p class="services_content--heading">WATCH OUR LATEST BLOGS</p>
                     <h2>Check Out Our Latest Blogs</h2>
                 </div>
-                <div class="blog_cards">
-                    <div class="blog_cards__card">
+                <div class="blog_cards" data-aos="fade-up" data-aos-easing="linear">
+                    <div class="blog_cards__card" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="00">
                         <div class="blog_image">
                             <img src="./images/blogimage.webp" alt="Image Info" height="410" width="411">
                         </div>
@@ -400,15 +402,13 @@
                                     </div>
                                 </div>
                             </div>
-
                             <p class="blog_cards--heading">Online legal advice for asylum seekers in Greece</p>
                             <div class="rd_more_button">
                                 <button>Read More</button>
                             </div>
                         </div>
-
                     </div>
-                    <div class="blog_cards__card">
+                    <div class="blog_cards__card" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear">
                         <div class="blog_image">
                             <img src="./images/blog2.webp" alt="Image Info" height="410" width="411">
                         </div>
@@ -436,7 +436,7 @@
                         </div>
 
                     </div>
-                    <div class="blog_cards__card">
+                    <div class="blog_cards__card" data-aos="zoom-in" data-aos-duration="1200" data-aos-easing="linear">
                         <div class="blog_image">
                             <img src="./images/blog3.webp" alt="Image Info" height="410" width="411">
                         </div>
@@ -469,23 +469,26 @@
         <!-- Testiomonial Section Starts -->
         <section class="services_section testimonial_section">
             <div class="container services_section--div testimonial_section--div">
-                <div class="services_content testimonial__content">
+                <div class="services_content testimonial__content" data-aos="fade-up" data-aos-easing="linear">
                     <p class="services_content--heading ">TESTIMONIAL</p>
                     <h2>Our customer success stories about us</h2>
                 </div>
-                <div class="testimonial__content--card">
-                    <div class="testimonial__content--card--details">
-                        <div><img src="./images/tesimonailuser.webp" alt="Image Info" height="106" width="103"></div>
-                        <h3>Smith Murthy</h3>
-                        <p>DIRECTOR</p>
-                    </div>
-                    <div class="testimonial__content--card--intro">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
-                            elementum tristique.
+                <div class="testimonial__content--carddiv" data-aos="fade-up" data-aos-easing="linear">
+                    <div class="testimonial__content--card">
+                        <div class="testimonial__content--card--details">
+                            <div><img src="./images/tesimonailuser.webp" alt="Image Info" height="106" width="103">
+                            </div>
+                            <h3>Smith Murthy</h3>
+                            <p>DIRECTOR</p>
+                        </div>
+                        <div class="testimonial__content--card--intro">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique.
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
-                            elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-                            commodo diam libero vitae erat. </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                                commodo diam libero vitae erat. </p>
+                        </div>
                     </div>
                 </div>
                 <div class="dots-images-1"><img src="./images/Ellipse1.png" alt="Image Info" height="27" width="27">
@@ -507,7 +510,7 @@
         <!-- CTA section Starts -->
         <section class="cta_section">
             <div class="container cta_div">
-                <div class="cta_div--content">
+                <div class="cta_div--content" data-aos="fade-up" data-aos-easing="linear">
                     <h2>You can contribute to provide a place for children with special needs!</h2>
                     <div class="cta_div--content--buttons">
                         <button>Join as a volunteer</button>
@@ -522,7 +525,7 @@
             <div class="container events_section__div">
                 <h2>Our Events</h2>
                 <div class="events_section__div__cards">
-                    <div class="events_section__div__cards--card">
+                    <div class="events_section__div__cards--card" data-aos="zoom-in" data-aos-easing="linear">
                         <div class="news_event_div">
                             <p>Next Events</p>
                             <p class="events_section__div__cards--card--event">A day with our wonderful children</p>
@@ -533,7 +536,7 @@
                             <p>DEC</p>
                         </div>
                     </div>
-                    <div class="events_section__div__cards--card">
+                    <div class="events_section__div__cards--card" data-aos="zoom-in" data-aos-easing="line">
                         <div class="news_event_div">
                             <p>Next Events</p>
                             <p class="events_section__div__cards--card--event">A day with our wonderful children</p>
@@ -554,8 +557,8 @@
     <footer>
         <!-- Footer Section Starts -->
         <div class="container footer_div">
-            <div class="footer_div--logo"><img src="./images/logo_1.png" alt="Image Info" width="108" height="45"></div>
-            <div class="footer_div_menulinks">
+            <div class="footer_div--logo" data-aos="fade-up" data-aos-easing="linear"><img src="./images/logo_1.png" alt="Image Info" width="108" height="45"></div>
+            <div class="footer_div_menulinks" data-aos="fade-up" data-aos-easing="linear">
                 <ul>
                     <li><a href="#">
                             <h3>Home</h3>
@@ -566,7 +569,7 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-            <div class="footer_div_menulinks">
+            <div class="footer_div_menulinks" data-aos="fade-up" data-aos-easing="linear">
                 <ul>
                     <li><a href="#">
                             <h3>More</h3>
@@ -577,7 +580,7 @@
                     <li><a href="#">Blog</a></li>
                 </ul>
             </div>
-            <div class="footer_div_menulinks">
+            <div class="footer_div_menulinks" data-aos="fade-up" data-aos-easing="linear">
                 <h3>Contact</h3>
                 <div class="footer_div_menulinks--contact">
                     <img src="./images/envelopelogo.svg" alt="Image Info" height="19" width="18">
@@ -588,7 +591,7 @@
                     <p>+234 090323430130</p>
                 </div>
 
-                <div class="footer_div_menulinks--share">
+                <div class="footer_div_menulinks--share" data-aos="fade-up" data-aos-easing="linear">
                     <h3>Connect</h3>
                     <div class="footer_div_menulinks--share--icons">
                         <img src="./images/twitterlogo.svg" alt="Image Info" height="19" width="18">
@@ -598,7 +601,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer_div_newsletter">
+            <div class="footer_div_newsletter" data-aos="fade-up" data-aos-easing="linear">
                 <p class="footer_div_newsletter--heading">Newsletter</p>
                 <p class="footer_div_newsletter--para">Subscribe to get latest updates</p>
                 <div class="footer_div_newsletter--subscribediv">
@@ -608,6 +611,13 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var offsetValue = window.innerHeight - 100;
+            AOS.init({
+                offset: -offsetValue,
+            });
+        });
+    </script>
 </body>
-
 </html>

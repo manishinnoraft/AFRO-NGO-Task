@@ -38,6 +38,9 @@ $(function() {
     ]
   });
 
+  // Slider for single item.
+  $('.single-item').slick();
+
   // Slider for Projects Section Cards.
   $('.responsive-1').slick({
     centerMode: true,
@@ -80,6 +83,7 @@ $(function() {
   ]
   });
 });
+
 
 
 	
