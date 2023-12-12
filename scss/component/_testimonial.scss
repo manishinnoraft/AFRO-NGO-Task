@@ -1,6 +1,6 @@
 @use '../abstract/variables' as *;
 
-// CSS for Testimonial Section
+// CSS for Testimonial Section.
 .testimonial_section {
     background-image: url('../images/worldmap.webp');
     background-color: transparent;
@@ -58,7 +58,7 @@
 
 .testimonial__content {
     & h2 {
-        font-size: 56px;
+        font-size: $font-size-56;
         width: 60%;
     }
 
@@ -83,7 +83,7 @@
             width: max-content;
 
             & h3 {
-                font-size: 28px;
+                font-size: $font-size-28;
                 width: max-content;
             }
 
@@ -200,7 +200,7 @@
                 position: absolute;
 
                 & h3 {
-                    font-size: 48px;
+                    font-size: $font-size-48;
                 }
             }
         }

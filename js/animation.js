@@ -33,11 +33,9 @@ $(window).on("scroll", function(){
         }
       }, 10);
     });
-
-    // Set the flag to true to indicate that the animation has been triggered
     animationTriggered = true;
   } else if (!animationTriggered) {
-    // Reset to original state when out of viewport without triggering the animation
+    // Reset to original state when out of viewport
     $(".statistics__card h3").each(function() {
       var $h3 = $(this);
       var originalValue = $h3.text(); // Capture the original value
@@ -46,4 +44,26 @@ $(window).on("scroll", function(){
     $(".aboutUs_section").css("opacity", "0");
   }
 });
+
+//Js to Display navbar for smaller screens
+document.addEventListener("DOMContentLoaded", function() {
+  var navbar = document.querySelector('.navbar');
+
+  function handleScroll() {
+      if (window.innerWidth >= 768) {
+          if (window.scrollY > navbar.offsetTop + navbar.offsetHeight) {
+              navbar.style.display = 'none';
+          } else {
+              navbar.style.display = 'flex';
+          }
+      } else {
+          navbar.style.display = 'flex'; 
+      }
+  }
+
+  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('resize', handleScroll);
+  handleScroll();
+});
+
 

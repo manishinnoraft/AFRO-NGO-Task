@@ -3,22 +3,22 @@
   src: url(../vendor/fonts/Roboto/Roboto-Regular.ttf);
   font-display: swap;
 }
-/* css resets starts */
-/* Box sizing rules */
+/* css resets starts. */
+/* Box sizing rules. */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Remove default margin */
+/* Remove default margin. */
 * {
   margin: 0;
   padding: 0;
-  font-family: Roboto;
+  font-family: "Roboto";
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed. */
 ul[role=list],
 ol[role=list] {
   list-style: none;
@@ -28,12 +28,12 @@ ul {
   list-style-type: none;
 }
 
-/* Set core root defaults */
+/* Set core root defaults. */
 html:focus-within {
   scroll-behavior: smooth;
 }
 
-/* Set core body defaults */
+/* Set core body defaults. */
 html, body {
   height: 100%;
 }
@@ -43,13 +43,12 @@ body {
   line-height: 1.5;
 }
 
-/* A elements that don't have a class get default styles */
+/* A elements that don't have a class get default styles. */
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-/* Make images easier to work with */
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them. */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
@@ -72,7 +71,7 @@ a {
   margin: 0 auto;
 }
 
-/* css reset ends */
+/* css reset ends. */
 footer {
   padding: 96px 0;
   background-image: url("../images/footerbg.png");
@@ -152,6 +151,13 @@ footer .footer_div_newsletter--subscribediv button {
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -261,7 +267,7 @@ footer .footer_div_newsletter--subscribediv button {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  width: calc(100% - 220px);
+  width: calc(100% - 180px);
   position: absolute;
   height: 1px;
   background-color: grey;
@@ -273,6 +279,10 @@ footer .footer_div_newsletter--subscribediv button {
 
 .slick-list.draggable {
   height: max-content;
+}
+
+.slick-dots li button:before {
+  font-size: 13px;
 }
 
 .aboutUs {
@@ -355,9 +365,7 @@ footer .footer_div_newsletter--subscribediv button {
   display: none;
   position: absolute;
   top: 20px;
-  /* Adjust the distance from the marker */
   left: 50%;
-  /* Center it horizontally */
   transform: translateX(-50%);
   text-align: center;
   font-weight: bold;
@@ -594,18 +602,14 @@ footer .footer_div_newsletter--subscribediv button {
   margin: 15px 0;
 }
 
-/* Additional styling for the form elements */
-/* Additional styling for the thank you message */
 .thank-you-message {
   margin-top: 20px;
   color: green;
   font-weight: bold;
 }
 
-/* Additional styling for the close button */
 .close-btn:hover {
   color: red;
-  /* Change color on hover if desired */
 }
 
 .name-div {
@@ -768,7 +772,7 @@ footer .footer_div_newsletter--subscribediv button {
 
 .slick-prev {
   position: absolute;
-  left: 50px; /* Adjust the left position according to your preference */
+  left: 50px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
@@ -778,7 +782,7 @@ footer .footer_div_newsletter--subscribediv button {
 
 .slick-next {
   position: absolute;
-  right: 50px; /* Adjust the left position according to your preference */
+  right: 50px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
@@ -789,6 +793,7 @@ footer .footer_div_newsletter--subscribediv button {
 .slick-prev:before, .slick-next:before {
   font-size: 26px;
   color: black;
+  border-radius: 50%;
   background-color: white;
 }
 
@@ -1070,6 +1075,13 @@ footer .footer_div_newsletter--subscribediv button {
   .container {
     width: 100%;
   }
+  .navbar {
+    position: static;
+    transform: translate(0px, 0px);
+  }
+  header .slick-arrow::before {
+    display: none;
+  }
   .navbar_section {
     background-color: white;
     position: relative;
@@ -1118,9 +1130,18 @@ footer .footer_div_newsletter--subscribediv button {
   .navbar_logo {
     width: 30%;
   }
+  .navbar_logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  .navbar__contactdiv--icon img {
+    max-width: 100%;
+    height: auto;
+  }
   .navbar {
     flex-wrap: wrap;
     gap: 10px;
+    align-items: revert-layer;
   }
   .header {
     background-size: cover;
@@ -1154,6 +1175,7 @@ footer .footer_div_newsletter--subscribediv button {
   }
   .services_image img {
     width: 100%;
+    object-fit: contain;
   }
   .projects_div__cards--card {
     padding: 2% 20px;
@@ -1173,6 +1195,9 @@ footer .footer_div_newsletter--subscribediv button {
   }
   .loremlogo_div__logos img {
     width: 33%;
+  }
+  .services_section {
+    padding: 48px 0;
   }
   .services_section--div {
     flex-direction: column;
@@ -1266,11 +1291,9 @@ footer .footer_div_newsletter--subscribediv button {
   }
   .slick-prev {
     left: 25px;
-    /* Adjust the left position according to your preference */
   }
   .slick-next {
     right: 25px;
-    /* Adjust the left position according to your preference */
   }
 }
 @media (min-width: 577px) and (max-width: 768px) {
@@ -1284,6 +1307,8 @@ footer .footer_div_newsletter--subscribediv button {
     flex-wrap: wrap;
     gap: 20px;
     background-color: white;
+    position: static;
+    transform: translate(0px, 0px);
   }
   .navbar_section {
     background-color: white;
@@ -1293,8 +1318,50 @@ footer .footer_div_newsletter--subscribediv button {
     gap: 20px;
     justify-content: space-between;
   }
+  .navbar__menu {
+    display: none;
+  }
+  .navbar__menu ul {
+    position: absolute;
+    right: 0;
+    z-index: 9999;
+    top: 50px;
+    background-color: white;
+    text-align: right;
+    flex-direction: column;
+  }
+  .navbar__menu ul li {
+    position: relative;
+    right: 0;
+  }
+  .navbar__menu ul li a {
+    text-align: center;
+  }
+  .navbar__menu ul li ul {
+    text-align: center;
+    position: relative;
+    background-color: white;
+    width: max-content;
+  }
+  .secondary_menu {
+    display: none !important;
+  }
+  .bar_icon {
+    display: flex !important;
+    width: 60%;
+    justify-content: end;
+  }
+  .navbar_logo {
+    width: 30%;
+  }
+  .navbar {
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: revert-layer;
+  }
   .services {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .services_card {
     width: 30%;
@@ -1324,6 +1391,11 @@ footer .footer_div_newsletter--subscribediv button {
   }
   .testimonial__content--card--intro p {
     text-align: justify;
+  }
+  .banner h1 {
+    padding-top: 58px;
+    font-size: 64px;
+    width: 50%;
   }
   .services_section--div {
     flex-direction: column;
@@ -1360,6 +1432,7 @@ footer .footer_div_newsletter--subscribediv button {
   .aboutUs {
     flex-direction: column;
     position: relative;
+    padding: 0 96px;
   }
   .aboutUs_map {
     width: 100%;
@@ -1443,6 +1516,7 @@ footer .footer_div_newsletter--subscribediv button {
   }
   .services {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .services_card {
     width: 30%;
@@ -1574,11 +1648,9 @@ footer .footer_div_newsletter--subscribediv button {
   }
   .slick-prev {
     left: 25px;
-    /* Adjust the left position according to your preference */
   }
   .slick-next {
     right: 25px;
-    /* Adjust the left position according to your preference */
   }
 }
 @media (min-width: 992px) and (max-width: 1280px) {
@@ -1651,10 +1723,8 @@ footer .footer_div_newsletter--subscribediv button {
   }
   .slick-prev {
     left: 45px;
-    /* Adjust the left position according to your preference */
   }
   .slick-next {
     right: 45px;
-    /* Adjust the left position according to your preference */
   }
 }/*# sourceMappingURL=style.css.map */

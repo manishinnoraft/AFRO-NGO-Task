@@ -1,13 +1,13 @@
 @use '../abstract/variables' as *;
 
-// CSS for Projects Section
+// CSS for Projects Section.
 .projects_section {
     margin-top: 144px;
 }
 
 .projects_div {
     &--heading {
-        font-size: 16px;
+        font-size: $font-size-16;
         margin-left: 96px;
         position: relative;
 
@@ -21,7 +21,6 @@
             transform: translateY(-50%);
             height: 2px;
             background-color: black;
-
         }
 
         &::after {
@@ -40,7 +39,7 @@
     }
 
     &--intropara {
-        font-size: 48px;
+        font-size: $font-size-48;
         width: 50%;
         margin-left: 96px;
         font-weight: 600;
@@ -103,7 +102,6 @@
                 color: black;
                 font-weight: 700;
                 border: none;
-
             }
         }
 
@@ -186,7 +184,7 @@
 
 .slick-prev {
     position: absolute;
-    left: 50px; /* Adjust the left position according to your preference */
+    left: 50px; 
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
@@ -195,7 +193,7 @@
 }
 .slick-next {
     position: absolute;
-    right: 50px; /* Adjust the left position according to your preference */
+    right: 50px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
@@ -206,5 +204,6 @@
 .slick-prev:before, .slick-next:before {
     font-size: 26px;
     color: black;
+    border-radius: 50%;
     background-color: white;
 }

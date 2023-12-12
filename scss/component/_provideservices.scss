@@ -1,5 +1,6 @@
 @use '../abstract/variables' as *;
 
+// CSS for the Services Section. 
 .services_section {
     padding: 96px 0;
     margin: 107px 0 114px 0;
@@ -16,7 +17,7 @@
     padding-right: 96px;
 
     & h2 {
-        font-size: 48px;
+        font-size: $font-size-48;
         line-height: 58px;
         margin-bottom: 16px;
     }
@@ -63,6 +64,6 @@
     gap: 24px;
 
     & h3 {
-        font-size: 24px;
+        font-size: $font-size-24;
     }
 }

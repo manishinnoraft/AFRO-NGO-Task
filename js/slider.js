@@ -1,8 +1,6 @@
-
-
-// Slick slider js
+// Slick slider js.
 $(function() {
-
+// Slider for Banner.
   $('.responsive').slick({
     dots: true,
     infinite: true,
@@ -10,7 +8,7 @@ $(function() {
     autoplaySpeed: 2000,
     arrows:true,
     slidesToShow: 1,
-    arrows:false,
+    arrows:true,
     adaptiveHeight: true,
     responsive: [
       {
@@ -40,6 +38,7 @@ $(function() {
     ]
   });
 
+  // Slider for Projects Section Cards.
   $('.responsive-1').slick({
     centerMode: true,
   centerPadding: '60px',

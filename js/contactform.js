@@ -1,5 +1,5 @@
+// Js to show contact form after banner section.
 $(document).ready(function () {
-  // Function to calculate the position of the second section
   function secondSectionPosition() {
     return $('.main section:nth-of-type(1)').offset().top;
   }
@@ -26,11 +26,7 @@ $(document).ready(function () {
 
   $('.contact-form').submit(function (e) {
     e.preventDefault();
-    // Handle form submission here
-
-    // Display the thank you message
     $('.thank-you-message').show();
-
-     });
+  });
 });
 

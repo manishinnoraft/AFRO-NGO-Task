@@ -1,3 +1,4 @@
+// Variables for font size.
 $font-size-12: 12px;
 $font-size-16: 16px;
 $font-size-18: 18px;
@@ -13,7 +14,9 @@ $font-size-64: 64px;
 $font-size-72: 72px;
 $font-size-80: 80px;
 $font-size-84: 84px;
+$font-roboto: 'Roboto';
 
+// Variables for color.
 $color_white: white;
 $color_grey: var(--Secondary-text, #525560);
 $color_cred: var(--foundation-primary-red-500, #B4252D);

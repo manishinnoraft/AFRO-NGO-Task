@@ -1,12 +1,12 @@
 @use '../abstract/variables' as *;
 
-// CSS for Latest Blogs Section
+// CSS for Latest Blogs Section.
 .blog_cards {
     display: flex;
     gap: 24px;
 
     &--heading {
-        font-size: 20px;
+        font-size: $font-size-20;
         font-weight: 700;
         margin-top: 18px;
     }
