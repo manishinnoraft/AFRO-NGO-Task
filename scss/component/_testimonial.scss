@@ -2,237 +2,236 @@
 
 // CSS for Testimonial Section.
 .testimonial_section {
-    background-image: url('../images/worldmap.webp');
-    background-color: transparent;
+  background-image: url('../images/worldmap.webp');
+  background-color: transparent;
 
-    &--div {
-        display: block;
-    }
+  &--div {
+    display: block;
+  }
 }
 
 .testimonial__content--carddiv {
-    border: 1px solid $color_borange;
-    max-width: 65%;
-    margin: 0 auto;
-    height: max-content;
-    border-radius: 0 25px 0 25px;
-    margin-top: 111px;
+  border: 1px solid $color_borange;
+  max-width: 65%;
+  margin: 0 auto;
+  height: max-content;
+  border-radius: 0 25px 0 25px;
+  margin-top: 111px;
 }
 
 .testimonial_section--div {
-    position: relative;
+  position: relative;
 }
 
 .dots-images-1 img {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
 }
 
 .dots-images-2 img {
-    position: absolute;
-    top: 70%;
-    left: 5%;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  transform: translateY(-50%);
 }
 
 .dots-images-3 img {
-    position: absolute;
-    top: 75%;
-    left: 15%;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 75%;
+  left: 15%;
+  transform: translateY(-50%);
 }
 
 .dots-images-4 img {
-    position: absolute;
-    left: 50%;
-    bottom: -15%;
-    transform: translateY(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: -15%;
+  transform: translateY(-50%);
 }
 
 .dots-images-5 img {
-    position: absolute;
-    top: 75%;
-    right: 15%;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 75%;
+  right: 15%;
+  transform: translateY(-50%);
 }
 
 .dots-images-6 img {
-    position: absolute;
-    top: 55%;
-    right: 10%;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 55%;
+  right: 10%;
+  transform: translateY(-50%);
 }
 
 .testimonial__content {
-    & h2 {
-        font-size: $font-size-56;
-        width: 60%;
-    }
+  & h2 {
+    font-size: $font-size-56;
+    width: 60%;
+  }
 }
 
 .testimonial__content--card {
-    position: relative;
-    top: -39px;
-    width: 90%;
-    border-radius: 0 25px 0 25px;
-    margin: 0 auto;
-    z-index: 9999;
-    background-color: white;
-    box-shadow: 0px 0px 3px 0px grey;
-    gap: 139px;
-    padding: 43px;
-    display: flex;
-    align-items: center;
+  position: relative;
+  top: -39px;
+  width: 90%;
+  border-radius: 0 25px 0 25px;
+  margin: 0 auto;
+  z-index: 9999;
+  background-color: white;
+  box-shadow: 0px 0px 3px 0px grey;
+  gap: 139px;
+  padding: 43px;
+  display: flex;
+  align-items: center;
 
-    & p:nth-child(1) {
-        margin-bottom: 20px;
+  & p:nth-child(1) {
+    margin-bottom: 20px;
+  }
+
+  &--details {
+    width: max-content;
+
+    & h3 {
+      font-size: $font-size-28;
+      width: max-content;
     }
 
-    &--details {
-        width: max-content;
-
-        & h3 {
-            font-size: $font-size-28;
-            width: max-content;
-        }
-
-        & p {
-            letter-spacing: 2px;
-        }
+    & p {
+      letter-spacing: 2px;
     }
+  }
 
-    &--intro {
-        border-left: 1px solid $color_grey;
-        color: $color_grey;
-        padding-left: 60px;
-    }
+  &--intro {
+    border-left: 1px solid $color_grey;
+    color: $color_grey;
+    padding-left: 60px;
+  }
 }
 
 
 // CSS for CTA div
 .cta_div {
-    background-image: url('../images/ctaimage.webp');
-    padding: 70px 0;
-    border-radius: 25px;
-    background-size: cover;
+  background-image: url('../images/ctaimage.webp');
+  padding: 70px 0;
+  border-radius: 25px;
+  background-size: cover;
 
-    &--content {
-        width: 65%;
-        margin: 0 auto;
+  &--content {
+    width: 65%;
+    margin: 0 auto;
 
-        & h2 {
-            text-align: center;
-            font-size: 48px;
-            color: white;
-            font-weight: 700;
-        }
-
-        &--buttons {
-            margin-top: 32px;
-
-            text-align: center;
-
-            & button:nth-child(1) {
-                padding: 16px 32px;
-                justify-content: center;
-                align-items: center;
-                background-color: $color_cred;
-                border: none;
-                color: white;
-                margin-right: 32px;
-            }
-
-            & button:nth-child(2) {
-                padding: 16px 32px;
-                justify-content: center;
-                align-items: center;
-            }
-        }
+    & h2 {
+      text-align: center;
+      font-size: 48px;
+      color: white;
+      font-weight: 700;
     }
+
+    &--buttons {
+      margin-top: 32px;
+
+      text-align: center;
+
+      & button:nth-child(1) {
+        padding: 16px 32px;
+        justify-content: center;
+        align-items: center;
+        background-color: $color_cred;
+        border: none;
+        color: white;
+        margin-right: 32px;
+      }
+
+      & button:nth-child(2) {
+        padding: 16px 32px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
 }
 
 // CSS for Events Section
 .events_section__div {
-    margin-top: 58px;
-    margin-bottom: 88px;
+  margin-top: 58px;
+  margin-bottom: 88px;
 
-    & h2 {
-        font-size: 40px;
-        font-style: normal;
-        margin-bottom: 60px;
-        font-weight: 500;
-    }
+  & h2 {
+    font-size: 40px;
+    font-style: normal;
+    margin-bottom: 60px;
+    font-weight: 500;
+  }
 
-    &__cards {
-        display: flex;
-        gap: 24px;
+  &__cards {
+    display: flex;
+    gap: 24px;
 
-        &--card {
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
-            padding: 40px 119px;
-            background-color: $color_cgreylight;
+    &--card {
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      padding: 40px 119px;
+      background-color: $color_cgreylight;
 
-            & p:first-child {
-                letter-spacing: 2px;
-                text-transform: uppercase;
-                position: relative;
-                width: max-content;
+      & p:first-child {
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        width: max-content;
 
-                &::after {
-                    content: "";
-                    position: absolute;
-                    width: 43px;
-                    height: 1px;
-                    background-color: black;
-                    top: 50%;
-                    right: -80px;
-                    transform: translateY(-50%);
-                }
-            }
-
-            &--event {
-                font-size: 28px;
-                font-weight: 700;
-            }
-
-            &--date {
-
-                text-align: center;
-                padding: 20px;
-                border-radius: 15px 0 15px 0;
-                background-color: $color_cgreydark;
-                top: 0;
-                left: 0;
-                position: absolute;
-
-                & h3 {
-                    font-size: $font-size-48;
-                }
-            }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 43px;
+          height: 1px;
+          background-color: black;
+          top: 50%;
+          right: -80px;
+          transform: translateY(-50%);
         }
+      }
 
+      &--event {
+        font-size: 28px;
+        font-weight: 700;
+      }
+
+      &--date {
+
+        text-align: center;
+        padding: 20px;
+        border-radius: 15px 0 15px 0;
+        background-color: $color_cgreydark;
+        top: 0;
+        left: 0;
+        position: absolute;
+
+        & h3 {
+          font-size: $font-size-48;
+        }
+      }
     }
+  }
 }
 
 .events_section__div h2 {
-    position: relative;
+  position: relative;
 
-    &::after {
-        content: "";
-        display: block;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-        width: calc(100% - 220px);
-        position: absolute;
-        height: 1px;
-        background-color: grey;
+  &::after {
+    content: "";
+    display: block;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: calc(100% - 220px);
+    position: absolute;
+    height: 1px;
+    background-color: grey;
 
-    }
+  }
 }

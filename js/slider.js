@@ -1,14 +1,13 @@
 // Slick slider js.
 $(function() {
-// Slider for Banner.
+  // Slider for Banner.
   $('.responsive').slick({
     dots: true,
     infinite: true,
     speed: 3000,
     autoplaySpeed: 2000,
-    arrows:true,
+    arrows: true,
     slidesToShow: 1,
-    arrows:true,
     adaptiveHeight: true,
     responsive: [
       {
@@ -18,7 +17,6 @@ $(function() {
           slidesToScroll: 1,
           infinite: true,
           dots: true,
-
         }
       },
       {
@@ -44,46 +42,39 @@ $(function() {
   // Slider for Projects Section Cards.
   $('.responsive-1').slick({
     centerMode: true,
-  centerPadding: '60px',
-  dots:true,
-  arrows: true,
-  infinite: true,
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 992,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        arrows: true,
-        centerPadding: '40px',
-        slidesToShow: 2,
+    centerPadding: '60px',
+    dots: true,
+    arrows: true,
+    infinite: true,
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
       }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        arrows: true,
-        centerPadding: '40px',
-        slidesToShow: 2,
-      }
-    },
-    {
-      breakpoint: 576,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        arrows: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
+    ]
   });
 });
-
-
-
-	

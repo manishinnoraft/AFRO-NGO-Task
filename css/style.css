@@ -100,6 +100,9 @@ footer .footer_div_menulinks--contact {
   gap: 10px;
   margin-bottom: 15px;
 }
+footer .footer_div_menulinks--contact a {
+  color: white;
+}
 footer .footer_div_menulinks--contact img {
   object-fit: contain;
 }
@@ -203,6 +206,9 @@ footer .footer_div_newsletter--subscribediv button {
 }
 .navbar__contactdiv--details {
   margin-left: 12px;
+}
+.navbar__contactdiv--details a {
+  color: var(--Secondary-text, #525560);
 }
 .navbar__contactdiv--details p {
   color: var(--Secondary-text, #525560);

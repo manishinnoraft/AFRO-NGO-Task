@@ -2,63 +2,63 @@
 
 // CSS for Latest Blogs Section.
 .blog_cards {
-    display: flex;
-    gap: 24px;
+  display: flex;
+  gap: 24px;
 
-    &--heading {
-        font-size: $font-size-20;
-        font-weight: 700;
-        margin-top: 18px;
-    }
+  &--heading {
+    font-size: $font-size-20;
+    font-weight: 700;
+    margin-top: 18px;
+  }
 
-    &__card {
+  &__card {
 
-        &--content {
-            position: relative;
-            top: -30px;
-            background-color: $color_cyellowbg;
-            padding: 33px;
-            width: 95%;
-            margin: 0 auto;
+    &--content {
+      position: relative;
+      top: -30px;
+      background-color: $color_cyellowbg;
+      padding: 33px;
+      width: 95%;
+      margin: 0 auto;
 
-            &--details {
-                display: flex;
-                justify-content: space-between;
+      &--details {
+        display: flex;
+        justify-content: space-between;
 
-                &--comment {
-                    display: flex;
+        &--comment {
+          display: flex;
 
-                    & img {
-                        margin-right: 10px;
-                    }
+          & img {
+            margin-right: 10px;
+          }
 
-                    & p {
-                        font-size: 14px;
-                    }
-                }
-
-                &--posted {
-                    display: flex;
-
-                    & img {
-                        margin-right: 10px;
-                    }
-
-                    & p {
-                        font-size: 14px;
-                    }
-                }
-
-            }
+          & p {
+            font-size: 14px;
+          }
         }
+
+        &--posted {
+          display: flex;
+
+          & img {
+            margin-right: 10px;
+          }
+
+          & p {
+            font-size: 14px;
+          }
+        }
+
+      }
     }
+  }
 }
 
 .rd_more_button button {
-    margin-top: 25px;
-    border: none;
-    background-color: var(--foundation-primary-red-500, #B4252D);
-    color: white;
-    font-weight: 500;
-    padding: 16px 32px;
+  margin-top: 25px;
+  border: none;
+  background-color: var(--foundation-primary-red-500, #B4252D);
+  color: white;
+  font-weight: 500;
+  padding: 16px 32px;
 }
