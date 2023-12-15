@@ -1,0 +1,23 @@
+@use '../abstract/variables' as *;
+
+// CSS for Services Section.
+.services {
+    display: flex;
+    gap: 90px;
+    padding: 0 70px;
+}
+
+.services_card {
+    text-align: center;
+    padding: 30px;
+
+    & h3 {
+        margin: 12px 0;
+    }
+
+    & p {
+        color: $color_grey;
+        font-size: $font-size-12 ;
+    }
+
+}

@@ -1,0 +1,99 @@
+@use '../abstract/variables' as *;
+
+.contact-form-container {
+  top: 50%;
+  position: fixed;
+  right: -46px;
+  display: none;
+  z-index: 9999;
+  transform: translateY(-50%);
+  }
+  
+  .contact-btn {
+    transform: rotate(270deg);
+    border: none;
+    padding: 16px 32px;
+    font-size: $font-size-16;
+    font-family: Roboto;
+    border-radius: 4px;
+    background: var(--foundation-primary-red-500, #B4252D);
+    backdrop-filter: blur(40px);
+    color: white;
+  }
+  
+  .contact-form-wrapper {
+    display: none;
+    width: 640px;
+    height: 684px;
+    position: absolute;
+    right: 55px;
+    background: #fff;
+    padding: 48px;
+    bottom: -308px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  
+    input[type="text"]{
+      width: 100%;
+      margin-bottom: 20px;
+      border: none;
+      border-bottom: 1px solid black;
+    }
+    input[type="email"] {
+      width: 50%;
+      margin-bottom: 20px;
+      border: none;
+      border-bottom: 1px solid black;
+    }
+  
+  
+    textarea {
+      width: 100%;
+    }
+  
+    label {
+      padding: 10px 0;
+    }
+  
+    input[type="submit"] {
+      width: max-content;
+      margin-top: 20px;
+      padding: 16px 32px;
+      border-radius: 4px;
+      border: none;
+      font-size: $font-size-16;
+      font-family: Roboto;
+      background: $color_cred;
+      backdrop-filter: blur(40px);
+      color: white;
+    }
+  
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: $font-size-20;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+  
+  .contact-form p {
+    margin: 15px 0;
+  }
+
+  .thank-you-message {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+  }
+  .close-btn:hover {
+    color: red;
+  }
+  .name-div{
+    display: flex;
+    gap: 30px;
+  }
+  
